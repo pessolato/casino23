@@ -1,0 +1,179 @@
+.text-red {
+    color: red;
+}
+
+.text-black {
+    color: black;
+}
+
+.shadow-1 {
+    box-shadow: 2px 1px 0 #0d0d0d, 
+        2px 2px 0 #1a1a1a,
+        2px 3px 0 #262626,
+        2px 4px 0 #333333,
+        2px 5px 0 #404040,
+        2px 6px 1px rgba(0,0,0,.2),
+        2px 0 5px rgba(0,0,0,.2),
+        2px 1px 3px rgba(0,0,0,.4),
+        2px 3px 5px rgba(0,0,0,.3),
+        2px 5px 10px rgba(0,0,0,.35),
+        2px 10px 10px rgba(0,0,0,.3),
+        2px 20px 20px rgba(0,0,0,.25);
+}
+
+.shadow-2 {
+    box-shadow: 1px 1px 0 #0d0d0d, 
+        1px 1px 0 #1a1a1a,
+        1px 2px 0 #262626,        
+        1px 5px 1px rgba(0,0,0,.2),
+        1px 0 3px rgba(0,0,0,.2),
+        1px 1px 3px rgba(0,0,0,.4),
+        1px 3px 5px rgba(0,0,0,.3),
+        1px 5px 10px rgba(0,0,0,.35),
+        1px 10px 10px rgba(0,0,0,.3),
+        1px 20px 20px rgba(0,0,0,.25);
+}
+
+.col > p {
+    margin: auto;
+}
+
+.ui-state-hover {
+    background: lightblue;
+}
+
+.ui-state-highlight {
+    box-shadow: 0 0 20px rgba(255,255,255,0.5) inset,
+        0 0 5px rgba(255,255,255,0.5);
+}
+
+#pleaseBet {
+    display: none;
+    position: absolute;
+    background: black;
+    border-radius: 1.5em;
+    top:35%;
+    left: 32.9%;
+    z-index: 100;
+}
+
+#betTable {
+    cursor: default;
+    background: #034d00;
+    border: 6px ridge #c16f00; 
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 3px 1px 0 #4d2d00, 
+        3px 2px 0 #331e00,
+        3px 3px 0 #1a0f00,
+        3px 4px 0 #000000,
+        3px 6px 1px rgba(0,0,0,.2),
+        3px 0 5px rgba(0,0,0,.2),
+        3px 1px 3px rgba(0,0,0,.4),
+        3px 3px 5px rgba(0,0,0,.3),
+        3px 5px 10px rgba(0,0,0,.35),
+        3px 10px 10px rgba(0,0,0,.3),
+        3px 20px 20px rgba(0,0,0,.25);
+}
+
+#betTable h4 {
+    background: #c16f00;
+    background: linear-gradient(#c16f00, #4d2d00);
+}
+
+#betTable .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#betTable .col p {
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    border: 1px solid white;
+    border-radius: 0.5em;
+}
+
+#betOptions {
+    border-top: 1px solid white;
+}
+
+#betOptions .col-sm-6 {
+    position: relative;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border: 1px solid white;
+}
+
+img.draggableChip {    
+    float: right;
+    width: 45px;
+    cursor: -webkit-grab; 
+    cursor: grab;
+}
+
+img.droppedChip {
+    width: 45px;
+}
+
+.beingDragged {    
+    cursor: -webkit-grabbing; 
+    cursor: grabbing;
+}
+
+#containment-wrapper {
+    position: relative;
+}
+
+#wheelHolder {
+    position: relative;
+}
+
+#rouletteWheel {
+    width: 25vw;  
+}
+
+#ballHolder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#ball {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    padding: 0.5vw;
+    top: -8vw;
+    left: -0.5vw;
+    box-shadow: 0 -3px 4px black inset,
+        1px 2px 1px rgba(0,0,0,.2),
+        1px 0 5px rgba(0,0,0,.2),
+        1px 1px 2px rgba(0,0,0,.4),
+        1px 2px 3px rgba(0,0,0,.3),
+        1px 3px 5px rgba(0,0,0,.35);
+}
+
+#flashValue {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: lightblue;
+    font-weight: 900;
+    text-shadow: 0 0 10px black;
+    transition: transform 1s linear;
+}
+
+.tranlateUp {
+    transform: translateY(-100px);
+}
+
+@media (max-width: 1000px) {
+    #rouletteWheel {
+        width: 35vw;    
+    }
+
+    #ball {
+        top: -11vw;
+    }
+}
+

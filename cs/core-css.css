@@ -1,0 +1,344 @@
+/*HEADER STYLE BELOW*/
+header.jumbotrom {
+    position: relative;
+    align-items: flex-start;
+}
+
+header.jumbotrom > h1, header.jumbotrom > h3 {
+    min-width: 28rem;
+    cursor: default;
+}
+
+header.jumbotrom > h1 {
+    font-size: 6rem;
+}
+
+header.jumbotrom > h3 {
+    text-align: right;
+}
+
+header.jumbotrom {
+    background: #ffb600;         
+}
+
+/*SLOGAN ON HOMEPAGE*/
+#mainSlogan {
+    max-width: 502px;
+    min-width: 494px;
+}
+
+#mainSlogan > *:not(#joinButton) {
+    cursor: default;
+}
+
+#dropFlags {
+    text-align: center;
+    background: black;
+    min-width: inherit;
+    padding: 0.5em;;
+}
+
+#dropFlags img {
+    width: 3.2em;
+}
+
+#langButtons {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+/*PLAYER INFORMATION TAB BELOW*/
+#playerTab {
+    background: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    cursor: default;
+}
+
+#tabButton {
+    padding: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 1.8em;
+}
+
+#playerDetails {
+    position: relative;
+    flex: 1;
+    width: 85%;
+    margin-top: 1em;
+    padding-top: 2em;    
+    color: white;
+    transition: opacity 1s;
+}
+
+#playerDetails > div {
+    position: relative;
+    display: flex;
+    border: 1px ridge #ffb600;
+    padding: 1em;
+    padding-top: 3em;
+    margin-bottom: 2em;
+}
+
+#playerTab > div > div > h4 {
+    position: absolute;
+    left: -1px;;
+    top: -1em;
+    background: #ffb600;
+    display: inline;
+    padding: 0.4em;
+    font-weight: 900;
+    color: black;
+}
+
+#balance > p {
+    font-size: 2em;    
+}
+
+/*BASIC MODAL & LISTS STRUCTURE*/
+div.modal-header {
+    color: #ffb600;
+}
+
+li.list-group-item {
+    background: none;
+    border: none;
+    color: #ffb600;
+}
+
+div.modal-header >.close {
+    color: red;
+    text-shadow: none;
+    font-size: 35px;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+#username + p {
+    display: none;
+    color: red;
+}
+
+.close:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.close:focus {
+    outline: none;
+}
+
+/*MAIN GAMES HOLDER BELOW*/
+#catalogTitle {
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+#catalogTitle > h1 {
+    padding: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;    
+}
+
+#gamesCatalog {
+    position: relative;
+    padding: 1.5rem;
+}
+
+/*TRASITION TO AN ACTIVE GAME BELOW*/
+div.game > .activeGame {   
+    height: 100%;
+    width: 100%;
+    display: none;
+    padding-right: 4.7em;
+}
+
+.gameHolder, .row {
+    position: static !important;
+}
+
+article.gameHolder {
+    max-height: 45vh; 
+    /*    I use this line to correct a jump of height when disabling the window*/
+    padding: 3em;
+}
+
+/*BASIC THUMBNAIL STRUCTURE*/
+.game {
+    position: relative;
+    height: 35vh;
+    background: black;
+    border: 3px ridge #ffb600;
+    overflow: hidden;
+    transition: width 1s, height 1s;
+}
+
+.game:hover {
+    box-shadow: 8px 8px 18px rgba(0,0,0,0.7);
+}
+
+/*CIRCLE CLOSE BUTTON FOR EXITING AN ACTIVE GAME*/
+img.closeButton {
+    width: 2.5em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    opacity: 0.7;
+    display: none;
+    cursor: pointer;
+}
+
+/*PLAY BUTTON BASE STRUCTURE*/
+button.playButton {   
+    padding: 0.5em;
+    float: right;
+    margin-top: 1em;
+    background: #de0000;
+    border: none;
+    border-radius: 0.5em;
+    outline: none;
+    font-size: 3em;
+    box-shadow: 0 3px 2px #de0000, 
+        0 5px 2px #cc0000,
+        0 7px 2px #b30000,
+        0 10px 2px #990000,
+        0 12px 2px #800000,
+        0 6px 1px rgba(0,0,0,.2),
+        0 0 5px rgba(0,0,0,.2),
+        0 1px 3px rgba(0,0,0,.4),
+        0 3px 5px rgba(0,0,0,.3),
+        0 5px 10px rgba(0,0,0,.35),
+        0 10px 10px rgba(0,0,0,.3),
+        0 20px 20px rgba(0,0,0,.25);
+}
+
+.playButton:active {
+    background: #800000;
+    box-shadow: 0 0 6px #cc0000,
+        0 0px 5px #b30000,
+        0 0px 4px #990000,
+        0 0px 2px #800000;  
+    -ms-transform: translate(0px, 10px); /* IE 9 */
+    -webkit-transform: translate(0px, 10px); /* Safari */
+    transform: translate(0px, 10px);
+}
+
+/*BASIC FOOTER STRUCTURE*/
+#homeFooter {
+    box-shadow: 0 -5px 10px gray;
+}
+
+footer.jumbotrom {
+    background: #343a40;
+}
+
+/*MEDIAQUERYS*/
+@media (max-width: 1300px) {
+    article.gameHolder {
+        padding: 1em;
+    } 
+
+    div.homeImg {
+        visibility: hidden;   
+    }
+
+    #playerTab h4 {
+        font-size: 1.15em;
+    }
+
+    #playerTab p, #playerTab li {
+        font-size: 0.8em;
+    }
+
+    .playButton {
+        margin-top: 0.24em; 
+    }
+
+    #rewards > div{   
+        font-size: 1.3em;
+    }  
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-size: 50%;
+    } 
+
+    #tabButton:active {
+        background: #664900;
+        box-shadow: none;
+        box-shadow: 0 0 10px #cc9200,
+            0 0 12px #ffb600;
+    }
+
+
+    #playerForm > div > h6 {
+        font-size: 20px;
+    }
+
+    .animHolder > .mask h1{
+        font-size: 8vw;
+    }
+}
+
+/*PERMANENT ACTIVE PROPERTIES*/
+div.active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+.active:hover {
+    box-shadow: none;
+    border: none;
+}
+
+/*FONT-SIZE FOR THE BALANCE FIELD ON THE PLAYER TAB*/
+#balance > p {
+    font-size: 2em;    
+}
+
+/*DEVICE CHECKER*/
+#deviceChecker {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+#deviceChecker > div {
+    height: 25%;
+    width: 80vw;
+    max-width: 35em;
+    padding: 0 2em;
+}
+
+#deviceChecker h3 {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+#deviceChecker.onDevice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

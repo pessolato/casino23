@@ -1,0 +1,119 @@
+/*CARD FLIP ANIMATION*/
+.cardScene {
+    perspective: 200px;
+}
+
+.card {
+    position: relative;
+    margin: 0.4em;
+    margin-top: 1.2em;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card__face {
+    position: absolute;
+    top: -48px;
+    left: -35.5px;
+    backface-visibility: hidden;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/*CARD ASSETS*/
+#cardToShow {
+    transition: transform 1s;
+}
+
+.dealingCard {
+    transform: translateY(-300px);
+}
+
+/*TABLE STRUCTURE*/
+#blackjackTable {
+    position: relative;
+    overflow: hidden;
+}
+
+#tableHand, #playerHand {
+    position: absolute;
+}
+
+#tableHand {
+    left: 0;
+    top: 0;
+}
+
+#playerHand {
+    right: 0;
+    bottom: 0;
+}
+
+#tablePoints, #playerPoints {
+    display: none;
+}
+
+#blackjackTable img {
+    border-radius: 5px;
+}
+
+#bjDealer {
+    font-size: 1.5em;
+}
+
+/*BUTTON STRUCTURE*/
+#buttonsBJ {
+    position: relative;
+}
+
+#hit, #stand {
+    position: absolute;
+    display: none;
+}
+
+#hit {
+    left: 4em;
+}
+
+#stand {
+    right: 2em;
+}
+
+#startPlay, #hit, #stand {
+    font-size: 2em;
+}
+
+@media (max-width: 625px) {
+    #hit {
+        left: 23.5vw;
+    }
+
+    #stand {
+        top: 2.2em;
+        right: 15.55vw;
+    } 
+
+    #playerHand {
+        left: 0;
+        bottom: -8em;
+    }
+    
+    #tablePoints {
+        position: absolute;
+        top: 2em;
+        right: 1em
+    }
+    
+    #playerPoints {
+        position: absolute;
+        bottom: 2em;
+        right: 1em
+    }
+}
+

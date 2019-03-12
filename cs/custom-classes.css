@@ -1,0 +1,84 @@
+.hidden {
+    display: none;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif; 
+}
+
+.font-bevan {
+    font-family: 'Bevan', cursive;
+}
+
+.font-ultra {
+    font-family: 'Ultra', serif;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.golden-border {
+    border: 3px ridge #ffb600;
+    border-radius: 1em;
+}
+
+.subTitle {
+    background: #ffb600;
+    border-radius: 8em;
+    box-shadow: 2px 1px 0 #e6a400, 
+        2px 2px 0 #cc9200,
+        2px 3px 0 #b38000,
+        2px 4px 0 #996e00,
+        2px 5px 0 #805b00,
+        2px 6px 1px rgba(0,0,0,.2),
+        2px 0 5px rgba(0,0,0,.2),
+        2px 1px 3px rgba(0,0,0,.4),
+        2px 3px 5px rgba(0,0,0,.3),
+        2px 5px 10px rgba(0,0,0,.35),
+        2px 10px 10px rgba(0,0,0,.3),
+        2px 20px 20px rgba(0,0,0,.25);
+}
+
+.letterSpacing1 {
+    letter-spacing: 0.2em;
+}
+
+.text-shadow-white {
+    text-shadow: 3px 3px white,
+        1px 1px white;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.inverX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.casinoBG {
+    background-image:  url("../img/bg-green.jpg");
+    background-size: 25%;
+    background-position: center center; 
+}
+
+.dropdown-item {
+    padding: 0.5em;
+}
+
+.dropdown-item:hover {
+    background: none;
+}
+
